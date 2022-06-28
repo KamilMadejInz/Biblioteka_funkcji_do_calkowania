@@ -1,8 +1,4 @@
 import numpy as np
-#Zdefiniowanie funkcji
-#fun1 = lambda x: x^3 + 2*x^2 + 1
-#lub
-#def fun1(x): return x^3 + 2*x^2 + 1
 
 def f_rectI(f,a,b,n):
     """
@@ -23,9 +19,6 @@ def f_rectI(f,a,b,n):
     Y = []
     for i in range(0, n):
         Y.append(f(X[i]))
-
-    ## LUB
-    #y = [fun1(x) for x in np.linspace(a, b, num=n)]
 
     # konwertowanie listy na Listę NumPy, którą da się przemnożyć przez liczbę
     Y = np.array(Y)

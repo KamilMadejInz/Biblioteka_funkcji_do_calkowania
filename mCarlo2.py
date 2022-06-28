@@ -23,8 +23,9 @@ def f_MonteC(f, a, b, n,min,max):
         Y.append(f(X[i]))
 
     # n losowych wartości z przedziału <0, maxY>
-    Yi = np.random.uniform(minY, maxY, n)  ##To są losowe Y dla losowych X
-    # obliczenie ułamka prawdopodobieństwa, że losowan punkt znajduje się pod wykresem funkcji f(x)
+    Yi = np.random.uniform(minY, maxY, n)
+    
+    # obliczenie ułamka prawdopodobieństwa, że losowany punkt znajduje się pod wykresem funkcji f(x)
     k = 0
     for i in range(0, n):
         if (Yi[i] > 0) and (Yi[i] <= Y[i]):

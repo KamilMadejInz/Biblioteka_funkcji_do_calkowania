@@ -10,8 +10,6 @@ def f_crudeMonteC(f,a,b,n):
     # szerokość pojedynczego przedziału
     h = (b - a) / n
 
-    #Results are from the “continuous uniform” distribution over the stated interval.
-    # To sample  multiply the output of random_sample by (b-a) and add a:
     # losowanie n dowolnych punktów z przedziału <a,b>
     X = (b-a)*np.random.random_sample(n)+a
     Y = []
